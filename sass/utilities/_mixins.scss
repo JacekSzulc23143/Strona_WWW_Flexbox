@@ -8,3 +8,10 @@
 	background-color: c.$pure-white;
 	transition: width 0.3s;
 }
+
+@mixin heroImages($gbImg) {
+	background-image: c.$blue-gradient, url(../../img/header-big.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
