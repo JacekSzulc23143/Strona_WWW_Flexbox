@@ -106,6 +106,20 @@ body {
 	}
 }
 
+@keyframes navItemsNavigation {
+	from {
+		transform: translateX(200%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+.nav-items-animation {
+	animation: navItemsNavigation 1s both;
+}
+
 // HEADER
 .header {
 	position: relative;
