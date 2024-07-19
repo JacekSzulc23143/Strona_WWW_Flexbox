@@ -23,6 +23,13 @@
 	background-attachment: fixed;
 }
 
+@mixin heroImages3($gbImg3) {
+	background-image: c.$blue-gradient, url(../../img/offer-mini.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
 @mixin islandCardStyles {
 	position: absolute;
 	left: 50%;
