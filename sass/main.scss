@@ -293,7 +293,7 @@ body {
 				&-item {
 					padding: 1em;
 					font-size: 1.4rem;
-					border-bottom: 1px solid u.$light-white;
+					border-bottom: 1px solid u.$light-white; // poziome kreski
 
 					&:last-child {
 						border-bottom: none;
