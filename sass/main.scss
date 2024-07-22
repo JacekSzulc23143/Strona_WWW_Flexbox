@@ -423,6 +423,57 @@ body {
 	}
 }
 
+// CONTACT
+.contact {
+	position: relative;
+	background-color: u.$light-white;
+	overflow: hidden;
+
+	.white-block-left {
+		background-color: u.$dark;
+	}
+
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	&__form-input {
+		@include u.contactForm; // @mixin
+	}
+
+	&__form-textarea {
+		@include u.contactForm; // @mixin
+
+		max-width: 100%;
+		min-width: 100%;
+		width: 100%;
+		min-height: 150px;
+	}
+
+	&__form-btn {
+		align-self: flex-end; // pozycjonowanie do prawej strony
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		color: u.$pure-white;
+		border: none;
+		border-radius: 8px;
+		background-color: u.$main-color;
+		cursor: pointer;
+
+		&::before {
+			background-color: u.$secondary-color;
+		}
+	}
+}
+
 //=================================
 // MEDIA
 //=================================
