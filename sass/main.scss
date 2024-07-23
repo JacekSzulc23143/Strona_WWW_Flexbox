@@ -17,13 +17,14 @@ body {
 	right: 20px;
 	padding: 1em;
 	background: none;
-	border: 1px solid transparent;
+	border: 1px solid transparent; // dla osób niewidomych z czytnikiem ekranów
 	cursor: pointer;
 	z-index: 1000;
+	// mix-blend-mode: difference; // dodane przez słuchacza zamiast handleObserver w js
 
 	&:focus {
 		outline: none;
-		border: 1px solid rgba(255, 255, 255, 0.5);
+		border: 1px solid rgba(255, 255, 255, 0.5); // dla osób niewidomych z czytnikiem ekranów
 		border-radius: 8px;
 	}
 
@@ -119,6 +120,16 @@ body {
 .nav-items-animation {
 	animation: navItemsNavigation 1s both;
 }
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: u.$dark;
+}
+
+// .white-section {
+// 	background-color: u.$pure-white;
+// } // dodane przez słuchacza zamiast handleObserver w js
 
 // HEADER
 .header {
@@ -488,7 +499,7 @@ body {
 	}
 
 	&__box-desktop {
-		display: none;
+		display: none; // brak wyświetlanych elementów footer__box-desktop na urządzeniach mobilnych
 	}
 
 	&__box-title {
@@ -649,7 +660,7 @@ body {
 		}
 
 		&__box-desktop {
-			display: block;
+			display: block; // powrót elementów w footer__box-desktop
 		}
 
 		&__box {
